@@ -6,13 +6,9 @@
 using namespace std;
 
 
-/**
- * Auto-generated code below aims at helping you parse
- * the standard input according to the problem statement.
- **/
 int main()
 {
-
+    // Init variables
     int L;
     cin >> L; cin.ignore();
     int H;
@@ -33,6 +29,10 @@ int main()
         asciiArrayIn[i] = ROW;
     }
 
+
+
+    // for each letter in input string, try to find on alphaStrings,
+    // then use associated ASCII art
     for (size_t i = 0; i < T.size(); ++i)
     {
         findHigh = alphaStringHigh.find(T[i]);
@@ -64,12 +64,10 @@ int main()
     
     
 
-    // Write an action using cout. DON'T FORGET THE "<< endl"
-    // To debug: cerr << "Debug messages..." << endl;
     for (size_t i; i < H; ++i)
     {
         cout << asciiArrayOut[i] << endl;
     }
 
-    //cout << "answer" << endl;
+    
 }
